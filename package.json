@@ -1,0 +1,17 @@
+{
+  "name": "discord-bot",
+  "version": "1.0.0",
+  "main": "src/app.js",
+  "repository": "git@github.com:robls/discord-bot.git",
+  "author": "Joao Roberto <joao.r.lopesdasilva@gmail.com>",
+  "scripts": {
+    "start": "nodemon"
+  },
+  "license": "MIT",
+  "dependencies": {
+    "axios": "^0.19.2",
+    "discord.js": "^12.2.0",
+    "dotenv": "^8.2.0",
+    "nodemon": "^2.0.3"
+  }
+}
