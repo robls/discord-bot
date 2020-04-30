@@ -19,18 +19,18 @@ module.exports = {
       } = response.data;
 
       const returnEmbed = new MessageEmbed()
-      .setColor('#bd93f9')
-      .setTitle(login)
-      .setURL(html_url)
-      .setDescription(bio)
-      .setThumbnail(avatar_url)
-      .addFields(
-        {name: "Nome:", value: name},
-        {name: "Repositorios Publicos", value: public_repos, inline: true},
-        {name: 'Seguidores', value: followers, inline: true},
-        {name: 'Seguindo', value: following, inline: true},
-      )
-      .setTimestamp()
+        .setColor('#bd93f9')
+        .setTitle(login)
+        .setURL(html_url)
+        .setDescription(bio)
+        .setThumbnail(avatar_url)
+        .addFields(
+          {name: "Nome:", value: name},
+          {name: "Repositorios Publicos", value: public_repos, inline: true},
+          {name: 'Seguidores', value: followers, inline: true},
+          {name: 'Seguindo', value: following, inline: true},
+        )
+        .setTimestamp()
         return message.channel.send(returnEmbed);
       }catch(err){
         return message.reply(`Nao encontrei ninguem no GitHub com esse nome. (${username})`);
